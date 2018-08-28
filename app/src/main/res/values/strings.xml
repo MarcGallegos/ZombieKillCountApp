@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ZombieKillCount App</string>
+    <string name="content_description">Tall black trees silohuetted against a night sky eerily lit by green Auroras</string>
+    <string name="init_score">0</string>
+    <string name="p1_z_kill_header">P1 Zombie Kills</string>
+    <string name="p2_z_kill_header">P2 Zombie Kills</string>
+    <string name="plus_1_z_kill">+1 Zombie Kill</string>
+    <string name="plus_1_death_inf">+1 Death/Infection</string>
+    <string name="p1_death_inf_header">P1 Deaths/Infected</string>
+    <string name="p2_death_inf_header">P2 Deaths/Infected</string>
+    <string name="p1_assists_header">P1 Assists</string>
+    <string name="p2_assists_header">P2 Assists</string>
+    <string name="plus_1_assist">+1 Assist</string>
+    <string name="plus_1_hooman_infected">+1 Human Infected</string>
+    <string name="p1_num_infected_header">P1 # Infected</string>
+    <string name="p2_num_infected_header">P2 # Infected</string>
+    <string name="p1_kills_death_header">P1 Kills:Death</string>
+    <string name="p2_kills_death_header">P2 Kills:Death</string>
+    <string name="p1_update_kdr">Update P1 K:D Ratio</string>
+    <string name="p2_update_kdr">Update P2 K:D Ratio</string>
+    <string name="reset_all_stats">Reset All Stats</string>
+</resources>

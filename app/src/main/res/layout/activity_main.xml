@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pexels_photo_902756"
+        android:contentDescription="@string/content_description"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/p1_z_kill_header"
+                style="@style/sp_16TopHeader"/>
+
+            <TextView
+                android:id="@+id/player1_score"
+                style="@style/sp_40Score"
+                android:text="@string/init_score"
+                android:textColor="@color/red"/>
+
+            <Button
+                style="@style/playerButtons"
+                android:layout_marginVertical="4dp"
+                android:onClick="p1_zombieKill"
+                android:text="@string/plus_1_z_kill"/>
+
+            <Button
+                style="@style/playerButtons"
+                android:onClick="player1_death_or_infection"
+                android:text="@string/plus_1_death_inf"/>
+
+            <TextView
+                style="@style/sp_16Header"
+                android:text="@string/p1_death_inf_header"/>
+
+            <TextView
+                android:id="@+id/player1_death_or_infection"
+                style="@style/sp_40Score"
+                android:text="@string/init_score"
+                android:textColor="@color/red"/>
+
+            <TextView
+                style="@style/sp_13Header"
+                android:text="@string/p1_assists_header"/>
+
+            <TextView
+                android:id="@+id/Player1_assist"
+                style="@style/sp_25Score"
+                android:text="@string/init_score"
+                android:textColor="@color/red"/>
+
+            <Button
+                style="@style/playerButtons"
+                android:layout_marginVertical="4dp"
+                android:onClick="player1_assist"
+                android:text="@string/plus_1_assist"/>
+
+            <Button
+                style="@style/playerButtons"
+                android:onClick="increment_Player1_Humans_Infected"
+                android:text="@string/plus_1_hooman_infected"/>
+
+            <TextView
+                style="@style/sp_13Header"
+                android:text="@string/p1_num_infected_header"/>
+
+            <TextView
+                android:id="@+id/player1_humans_infected"
+                style="@style/sp_25Score"
+                android:text="@string/init_score"
+                android:textColor="@color/red"/>
+
+            <TextView
+            style="@style/sp_16Header"
+                android:text="@string/p1_kills_death_header"/>
+
+            <TextView
+                android:id="@+id/P1_KillDeathRatio"
+                style="@style/sp_40Score"
+                android:text="@string/init_score"
+                android:textColor="@color/red"/>
+
+            <Button
+                style="@style/kdrButton"
+                android:onClick="P1KillDeathRatio"
+                android:text="@string/p1_update_kdr"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/yellow"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sp_16TopHeader"
+                android:text="@string/p2_z_kill_header"/>
+
+            <TextView
+                android:id="@+id/player2_score"
+                style="@style/sp_40Score"
+                android:text="@string/init_score"
+                android:textColor="@color/green"/>
+
+            <Button
+                style="@style/playerButtons"
+                android:layout_marginVertical="4dp"
+                android:onClick="p2_zombieKill"
+                android:text="@string/plus_1_z_kill"/>
+
+            <Button
+                style="@style/playerButtons"
+                android:onClick="player2_death_or_infection"
+                android:text="@string/plus_1_death_inf"/>
+
+            <TextView
+                android:text="@string/p2_death_inf_header"
+                style="@style/sp_16Header"/>
+
+            <TextView
+                android:id="@+id/player2_death_or_infection"
+                style="@style/sp_40Score"
+                android:text="@string/init_score"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:text="@string/p2_assists_header"
+                style="@style/sp_13Header"/>
+
+            <TextView
+                android:id="@+id/Player2_assist"
+                android:text="@string/init_score"
+                android:textColor="@color/green"
+                style="@style/sp_25Score"/>
+
+            <Button
+                android:layout_marginVertical="4dp"
+                style="@style/playerButtons"
+                android:onClick="player2_assist"
+                android:text="@string/plus_1_assist"/>
+
+            <Button
+                android:onClick="increment_Player2_Humans_Infected"
+                android:text="@string/plus_1_hooman_infected"
+                style="@style/playerButtons"/>
+
+            <TextView
+                style="@style/sp_13Header"
+                android:text="@string/p2_num_infected_header"/>
+
+            <TextView
+                android:id="@+id/player2_humans_infected"
+                style="@style/sp_25Score"
+                android:text="@string/init_score"
+                android:textColor="@color/green"/>
+
+            <TextView
+                style="@style/sp_16Header"
+                android:text="@string/p2_kills_death_header"/>
+
+            <TextView
+                android:id="@+id/P2_KillDeathRatio"
+                android:text="@string/init_score"
+                android:textColor="@color/green"
+                style="@style/sp_40Score"/>
+
+            <Button
+                android:onClick="P2KillDeathRatio"
+                android:text="@string/p2_update_kdr"
+                style="@style/kdrButton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/reset"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="6dp"
+        android:background="@color/yellow"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:onClick="resetAll"
+        android:text="@string/reset_all_stats"
+        style="@style/ResetButton"/>
+
+</RelativeLayout>
